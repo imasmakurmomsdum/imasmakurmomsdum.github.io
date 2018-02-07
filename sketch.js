@@ -27,7 +27,7 @@ function pickLocation() {
   var cols = floor(width/scl);
   var rows = floor(height/scl);
   food = createVector(floor(random(cols)), floor(random(rows)));
-  if (food.x === snake.x || food.y === snake.y) {
+  if (food.x === snake.x || food.y === s.y) {
     food = createVector(floor(random(cols)), floor(random(rows)));
   }
   food.mult(scl);
